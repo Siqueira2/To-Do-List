@@ -1,0 +1,162 @@
+/*General*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    color: white;
+}
+
+body {
+    background-color: #202442;
+}
+
+.btn {
+    width: 2em;
+    border: none;
+    border-radius: 5px;
+    background: #2d325a;
+    box-shadow:  -1px 1px 2px #262b4d,
+             1px -1px 2px #343a68;
+    font-size: 1em;
+    padding: .3em .5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    background: linear-gradient(225deg, #242847, #262b4d);
+    box-shadow:  -1px 1px 2px #262b4d,
+             1px -1px 2px #343a68;
+}
+
+.btn i {
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.form-control input {
+    height: 2.5em;
+    background: #2d325a;
+    border-radius: 5px;
+    border: none;
+    padding: .6em .5em;
+    margin-right: .3em;
+}
+
+.hide {
+    display: none;
+}
+
+/*todo-form*/
+
+.container {
+    width: 450px;
+    background-color: #25294a;
+    margin: 3em auto;
+    padding: 1.5em;
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: #323653;
+    border: none;
+    margin: 20px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.form-control {
+    display: flex;
+}
+
+#cancel-btn {
+    margin-top: 1em;
+    min-width: 6em;
+    font-weight: bold;
+}
+
+#toolbar {
+    display: flex;
+    gap: 20%;
+}
+
+#search {
+    width: 100%;
+}
+
+#search form {
+    display: flex;
+    gap: .3em;
+}
+/*border-right: 1px solid #323653;*/
+
+#filter {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search input, #filter select {
+    flex-grow: 1;
+    height: 2.5em;
+    background: #2d325a;
+    border-radius: 5px;
+    border: none;
+    padding: .6em .5em;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo h4 {
+    flex: 1;
+    background: #2d325a;
+    padding: .6em .5em;
+    margin-right: .6em;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.todo button {
+    background: transparent;
+    border: none;
+    font-size: .8em;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: .6em;
+    padding: .3em;
+}
+
+.todo button i {
+    pointer-events: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.done h4 {
+    color: rgba(133, 133, 133, 0.555);
+    background: #2a2e4e93;
+}
+
+.hide {
+    display: none;
+}
