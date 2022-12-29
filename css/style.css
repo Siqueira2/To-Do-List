@@ -58,7 +58,7 @@ body {
     width: 450px;
     background-color: #25294a;
     margin: 3em auto;
-    padding: 1.5em;
+    padding: 1.5em 1.5em .3em 1.5em;
     border-radius: 15px;
 }
 
